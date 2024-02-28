@@ -24,13 +24,13 @@ const Navbar = () => {
       <div>
         <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>TravelGO</h1>
       </div>
-      <ul className='hidden md:flex justify-center text-center'>
-        <li>Home</li>
-        <li>Public Wall</li>
-        <li>Find a travel buddy</li>
-    
+      <ul className='hidden md:flex justify-center items-center text-center space-x-4'>
+        <li><a href="/home" className="text-white hover:text-yellow-600 transition-colors duration-300">Home</a></li>
+        <li><a href="/public-wall" className="text-white hover:text-yellow-600 transition-colors duration-300">Public Wall</a></li>
+
       </ul>
-     
+
+
 
       {/* Hamburger */}
       <div onClick={handleNav} className='md:hidden z-10'>
@@ -45,7 +45,7 @@ const Navbar = () => {
           <li className='border-b'>Destinations</li>
           <li className='border-b'>Travel</li>
           <li className='border-b'>View</li>
-          <li className='border-b'>Book</li>  
+          <li className='border-b'>Book</li>
           <div className='flex flex-col'>
             <button className='my-6'>Search</button>
             <button>Account</button>
